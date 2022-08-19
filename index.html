@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javanese👑</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="logo_content">
+        <div class="logo">
+          <i class="bx bxs-crown"></i>
+          <div class="logo_name">Hello Semua</div>
+        </div>
+        <i class="bx bx-menu" id="btn"></i>
+      </div>
+
+      <div class="src">
+        <i class="bx bx-search"></i>
+        <input type="text" placeholder="Search.." />
+      </div>
+
+      <ul class="nav">
+        <li>
+          <a href="#">
+            <i class="bx bxs-home-alt-2"></i>
+            <span class="link_name">Dashboard</span>
+          </a>
+          <span class="tooltip">Dashboard</span>
+        </li>
+
+        <li>
+          <a href="#">
+            <i class="bx bxs-graduation"></i>
+            <span class="link_name">Perkuliahan</span>
+          </a>
+          <span class="tooltip">Perkuliahan</span>
+        </li>
+
+        <li>
+          <a href="#">
+            <i class="bx bxs-group"></i>
+            <span class="link_name">Pertemanan</span>
+          </a>
+          <span class="tooltip">Pertemanan</span>
+        </li>
+
+        <li>
+          <a href="#">
+            <i class="bx bxs-institution"></i>
+            <span class="link_name">Magang</span>
+          </a>
+          <span class="tooltip">Magang</span>
+        </li>
+
+        <li>
+          <a href="#">
+            <i class="bx bxs-briefcase-alt-2"></i>
+            <span class="link_name">Kerja</span>
+          </a>
+          <span class="tooltip">Kerja</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="home_content">
+      <div class="text">Home Content</div>
+    </div>
+
+    <script>
+      let btn = document.querySelector('#btn');
+      let sidebar = document.querySelector('.sidebar');
+      let srcBtn = document.querySelector('.bx-search');
+
+      btn.onclick = function () {
+        sidebar.classList.toggle('active');
+      };
+      srcBtn.onclick = function () {
+        sidebar.classList.toggle('active');
+      };
+    </script>
+  </body>
+</html>
